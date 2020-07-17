@@ -286,6 +286,67 @@
 			})
 		</script>
 
+                                <!--音乐播放器-->
+		<div id="QPlayer">
+			<div id="pContent">
+				<div id="player">
+					<span class="cover"></span>
+					<div class="ctrl">
+						<div class="musicTag marquee">
+							<strong>Title</strong>
+							<span> - </span>
+							<span class="artist">Artist</span>
+						</div>
+						<div class="progress">
+							<div class="timer left">0:00</div>
+							<div class="contr">
+								<div class="rewind icon"></div>
+								<div class="playback icon"></div>
+								<div class="fastforward icon"></div>
+							</div>
+							<div class="right">
+								<div class="liebiao icon"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ssBtn">
+					<div class="adf"></div>
+				</div>
+			</div>
+			<ol id="playlist"></ol>
+		</div>
+		<script>
+			var playlist = [{
+				title: "MELANCHOLY",
+				artist: "Remix",
+				mp3: "https://chaojibiaodan-001.oss-cn-beijing.aliyuncs.com/202007061909391h84Dz5k0I822iq029.mp3",
+				cover: "https://y.gtimg.cn/music/photo_new/T002R300x300M000004Upmxf02GNW9_1.jpg?max_age=2592000",
+			}, {
+				title: "Coming home",
+				artist: "Remix",
+				mp3: "https://chaojibiaodan-001.oss-cn-beijing.aliyuncs.com/202007022141592Gx49F4wg2qE4RyzZ2.mp3",
+				cover: "http://p2.music.126.net/VUwksnGxRVoXKuse_kqOOg==/3286440255426121.jpg?param=300x300",
+			}, {
+				title: "生来倔强",
+				artist: "music",
+				mp3: "https://chaojibiaodan-001.oss-cn-beijing.aliyuncs.com/20200703222756E28zxd6ho94260Ys6C.mp3",
+				cover: "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=3202001588,3454933131&fm=74&app=80&f=JPG&size=f121,121?sec=1880279984&t=54ba02057bafbbe69ef108735b8eab24",
+			}, ];
+			var isRotate = true;
+			var autoplay = false;
+		</script>
+		<script src="js/player.js"></script>
+		<script>
+			function bgChange() {
+				var lis = $('.lib');
+				for (var i = 0; i < lis.length; i += 2)
+					lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+			}
+			window.onload = bgChange;
+		</script>
+		<!--音乐播放器结束-->
+
 		<!--看板娘-->
 		<img id="kbn" class="animated bounceInRight" src="image/kbn.png">
 
