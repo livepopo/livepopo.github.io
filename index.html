@@ -218,26 +218,13 @@
 
 				</div>
 				<div class="txt_right">
-					<p>来自：<span class="txt_name"></span></p>
+					<p><span class="txt_name"></span></p>
 					<!--<img src="https://p4.music.126.net/0lAkLx_MvUR5TDYOsTQTsw==/109951163926228201.jpg">-->
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$.get("https://api.uomg.com/api/comments.163?format=json", function(data) {
-				var json = JSON.parse(data);
-				$("#txt_center").find("p").eq(0).text(json.data.content);
-				$("#txt_center").find("img").attr("src", json.data.picurl);
-				$(".txt_name").text(json.data.nickname);
-			});
-			/*延迟弹出公告框*/
-			setTimeout('test()', 1200);
-
-			function test() {
-				$("#boox_gg").show();
-			}
-		</script>
-		<!--公告代码结束-->
+		<b>欢迎光顾~</b>
+			
 
 		<!--天气代码-->
 		<div id="tp-weather-widget" style="position:absolute;z-index:99999;"></div>
