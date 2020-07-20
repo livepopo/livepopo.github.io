@@ -63,6 +63,7 @@
 			<div id="certify">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
+<<<<<<< HEAD
 						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/UhxXUx.png" alt="UhxXUx.png" border="0" />
 								<p>LOVE IU 1</p>
 							</a></div>
@@ -86,6 +87,16 @@
 							 </a></div>				
 						<div class="swiper-slide"><a href="#"><<img src="https://s1.ax1x.com/2020/07/20/U4PSuF.png" alt="U4PSuF.png" border="0" />
 												<p>LOVE IU 7</p>
+=======
+						<div class="swiper-slide"><a href="#"><img src="image/pg01.png" />
+								<p>one</p>
+							</a></div>
+						<div class="swiper-slide"><a href="#"><img src="image/pg02.png" />
+								<p>two </p>
+							</a></div>
+						<div class="swiper-slide"><a href="#"><img src="image/pg03.png" />
+								<p>three </p>
+>>>>>>> 93e0a5c9443cab6f6eaed3cd159596b800e5cf59
 							</a></div>
 					</div>
 				</div>
@@ -233,26 +244,13 @@
 
 				</div>
 				<div class="txt_right">
-					<p>来自：<span class="txt_name"></span></p>
+					<p><span class="txt_name"></span></p>
 					<!--<img src="https://p4.music.126.net/0lAkLx_MvUR5TDYOsTQTsw==/109951163926228201.jpg">-->
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript">
-			$.get("https://api.uomg.com/api/comments.163?format=json", function(data) {
-				var json = JSON.parse(data);
-				$("#txt_center").find("p").eq(0).text(json.data.content);
-				$("#txt_center").find("img").attr("src", json.data.picurl);
-				$(".txt_name").text(json.data.nickname);
-			});
-			/*延迟弹出公告框*/
-			setTimeout('test()', 1200);
-
-			function test() {
-				$("#boox_gg").show();
-			}
-		</script>
-		<!--公告代码结束-->
+		<b>欢迎光顾~</b>
+			
 
 		<!--天气代码-->
 		<div id="tp-weather-widget" style="position:absolute;z-index:99999;"></div>
