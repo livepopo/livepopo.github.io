@@ -4,11 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-		<title>川  努力做个努力的人</title>
-		<meta name="description" content="现实再残酷也会有光芒降临">
+		<title>川 | 努力成为努力的人</title>
+		<meta name="description" content="折腾使我快乐。">
 		<meta name="keywords" content="畅玩,主页,博客,tqy,xhj">
 		<link rel="stylesheet" type="text/css" href="css/initial.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" href="css/animate.compat.css" />
 		<link rel="stylesheet" href="css/player.css">
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -36,73 +36,131 @@
 				width: 450px;
 				padding: 25px;
 			}
-			#box_celeft{
-				width:350px;
+
+			#box_celeft {
+				width: 350px;
 				padding-top: 2.5%;
 			}
+
 			.ulli_ce ul li {
-			    margin: 35px auto;
+				margin: 35px auto;
 			}
-			#right_me{
+
+			#right_me {
 				bottom: 290px;
 			}
 		}
 	</style>
 	<body>
+		<script type="text/javascript">
+			//页面内容在下面修改哦
+			var timea_name = "image/me.png"; //网站头像地址
+			var name_title = "川"; //网站昵称标题
+			var qian_title = "那堪好风景，独上洛阳桥"; //签名语句
+			var kbna_image = "image/kbn.png"; //看板娘logo地址
+			var yejo_html = '<p>© 2020 川 |<a href="https://livepopo.github.io/"></a></p>GitHub托管<p>Theme Change By 川</p><br><br><br>'; //页面页脚内容修改
+			//是否自定义弹窗公告内容：热评no,自定义公告改yes
+			var gg_cwrp = "no";
+			var center_text = "我是自定义弹窗内容！！！";//弹窗公告内容
+			
+			//花瓣飘落是否显示：不显示改no,显示改yes
+			var huabang = "yes";
+			//运行天数修改
+			X = new Date("7/16/2020 24:00:00");
+			
+			//轮播内容添加
+			var lun_json = [[
+					"#", //点击跳转链接
+					"image/pg01.png", //展示图片地址
+					"Love iu 1" //轮播标题
+				],
+				[
+					"#", //点击跳转链接
+					"image/pg02.png", //展示图片地址
+					"Love iu 2" //轮播标题
+				],
+				[
+					"#", //点击跳转链接
+					"image/pg03.png", //展示图片地址
+					"Love iu 3" //轮播标题
+				]
+			];
+
+			//侧边栏目添加
+			var ceb_json = [[
+					"https://livepopo.github.io/", //点击跳转链接
+					"image/home.png", //图标logo
+					"首页" //栏目标题
+				],
+				[
+					"http://livepopo.ys168.com/", //点击跳转链接
+					"image/works.png", //图标logo
+					"川物间" //栏目标题
+				],
+				[
+					"https://www.musicbooks.cn/", //点击跳转链接
+					"image/release.png", //图标logo
+					"网易云热评" //栏目标题
+				],
+				[
+					"https://www.shenmezhidedu.com/", //点击跳转链接
+					"image/collection.png", //图标logo
+					"什么值得读" //栏目标题
+				],
+				[
+					"https://meiriyiwen.com/", //点击跳转链接
+					"image/setup.png", //图标logo
+					"每日一文" //栏目标题
+				]
+			];
+
+			//音乐添加
+			var playlist = [{
+				title: "Blueming", //音乐标题
+				artist: "iu", //歌手昵称
+				mp3: "http://m10.music.126.net/20200720181910/6a11a64d968361a47b5849a303d3806a/ymusic/025a/0552/015b/50cdd82bb2284f70c8d7616f3507a961.mp3", //音乐地址
+				cover: "https://y.gtimg.cn/music/photo_new/T002R300x300M000004Upmxf02GNW9_1.jpg?max_age=2592000", //音乐封面
+			}, {
+				title: "Jocelyn Flores",
+				artist: "Remix",
+				mp3: "http://music.163.com/song/media/outer/url?id=501133798.mp3",
+				cover: "http://p2.music.126.net/VUwksnGxRVoXKuse_kqOOg==/3286440255426121.jpg?param=300x300",
+			}, {
+				title: "Love Is Gone",
+				artist: "music",
+				mp3: "http://music.163.com/song/media/outer/url?id=1364247901.mp3",
+				cover: "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=3202001588,3454933131&fm=74&app=80&f=JPG&size=f121,121?sec=1880279984&t=54ba02057bafbbe69ef108735b8eab24",
+			}, ];
+		</script>
+
 		<div id="box">
 			<!--头像部分-->
 			<div id="boox" class="animated swing">
-				<img class="touxiang" src="image/me.png">
-				<p class="title animated bounceInLeft">川 🇨🇳</p>
-				<p class="lizhi">那堪好风景，独上洛阳桥</p>
+				<img class="touxiang" src="">
+				<p class="title animated bounceInLeft"></p>
+				<p class="lizhi">努力做个努力的人</p>
 				<p class="titma animated"><span id="span">本站已运行: 00天0小时00分00秒</span></p>
 			</div>
+			<script type="text/javascript">
+				$(".touxiang").attr("src",timea_name);
+				$(".title").text(name_title);
+				$(".lizhi").text(qian_title);
+			</script>
 			<!--头像部分结束-->
 
 			<!--轮播html-->
 			<div id="certify">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
-<<<<<<< HEAD
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/UhxXUx.png" alt="UhxXUx.png" border="0" />
-								<p>LOVE IU 1</p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/UhzXLj.jpg" alt="UhzXLj.jpg" border="0" /> 
-								<p>LOVE IU 2</p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/U4SKfK.png" alt="U4SKfK.png" border="0" />
-								<p>LOVE IU 3</p>
-							</a></div>	
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/U4S01S.png" alt="U4S01S.png" border="0" />
-										<p>LOVE IU 4</p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/U4pSnH.png" alt="U4pSnH.png" border="0" />
-											<p>LOVE IU 5</p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/U49Mse.png" alt="U49Mse.png" border="0" />
-											<p>LOVE IU 6</p>
-						    </a></div>
-						<div class="swiper-slide"><a href="#"><img src="https://s1.ax1x.com/2020/07/20/U4Cf9P.png" alt="U4Cf9P.png" border="0" />
-											<p>LOVE IU 7</p>
-							 </a></div>				
-						<div class="swiper-slide"><a href="#"><<img src="https://s1.ax1x.com/2020/07/20/U4PSuF.png" alt="U4PSuF.png" border="0" />
-												<p>LOVE IU 7</p>
-=======
-						<div class="swiper-slide"><a href="#"><img src="image/pg01.png" />
-								<p>one</p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="image/pg02.png" />
-								<p>two </p>
-							</a></div>
-						<div class="swiper-slide"><a href="#"><img src="image/pg03.png" />
-								<p>three </p>
->>>>>>> 93e0a5c9443cab6f6eaed3cd159596b800e5cf59
-							</a></div>
+						
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 			<script>
+				for(var kit = 0;kit<lun_json.length;kit++){
+					$(".swiper-wrapper").append('<div class="swiper-slide"><a href='+lun_json[kit][0]+'><img src='+lun_json[kit][1]+' /><p>'+lun_json[kit][2]+'</p></a></div>');
+				}
 				var certifySwiper = new Swiper('#certify .swiper-container', {
 					watchSlidesProgress: true,
 					slidesPerView: 'auto',
@@ -155,102 +213,90 @@
 
 		<!-- 页脚 -->
 		<div id="footer">
-			<p>© 2020 川 | <a href="https://livepopo.github.io/">GitHub托管</a></p>
-			<p>Theme Made BY Chang wan🎈</p>
-			<br><br><br>
+			<p>© 2020 Chuan|<a href="努力做个努力的人">GitHub托管</a></p>
+			<p> Change By Chuan</p><br><br><br>
 		</div>
-		
+
 		<!--侧边栏代码-->
 		<div id="boox_ce">
 			<div id="box_celeft" class="animated fadeInLeft">
 				<div class="me_ce">
-					<img src="#" >
+					<img src="#">
 				</div>
 				<div class="title_ce"></div>
 				<div class="ulli_ce">
 					<ul>
-						<a href="https://livepopo.github.io/">
-						<li>
-							<img src="image/home.png" >
-							<p>首页</p>
-							<img class="jt_ce" src="image/jt.png" >
-						</li>
-						</a>
-						<a href="http://livepopo.ys168.com/">
-						<li>
-							<img src="image/works.png" >
-							<p>川物间</p>
-							<img class="jt_ce" src="image/jt.png" >
-						</li>
-						</a>
-						<a href="https://www.musicbooks.cn/">
-						<li>
-							<img src="image/release.png" >
-							<p>网易云热评</p>
-							<img class="jt_ce" src="image/jt.png" >
-						</li>
-						</a>
-						<a href="https://www.shenmezhidedu.com/">
-						<li>
-							<img src="image/collection.png" >
-							<p>什么值得读</p>
-							<img class="jt_ce" src="image/jt.png" >
-						</li>
-						</a>
-						<a href="https://meiriyiwen.com/">
-						<li>
-							<img src="image/setup.png" >
-							<p>每日一文</p>
-							<img class="jt_ce" src="image/jt.png" >
-						</li>
-						</a>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div id="right_me">
-			<img src="image/cdan.png" >
+			<img src="image/cdan.png">
 		</div>
 		<script type="text/javascript">
+			for(var cetime=0;cetime<ceb_json.length;cetime++){
+				$(".ulli_ce ul").append('<a href='+ceb_json[cetime][0]+'><li><img src='+ceb_json[cetime][1]+'><p>'+ceb_json[cetime][2]+'</p><img class="jt_ce" src="image/jt.png"></li></a>');
+			}
 			/*自动获取头像和昵称*/
 			var img_me = $(".touxiang").attr("src");
-			$(".me_ce").find("img").attr("src",img_me);
+			var niceng = $(".title").text();
+			$(".me_ce").find("img").attr("src", img_me);
 			$(".title_ce").text($(".title").text());
-			$("#right_me").click(function(){
-			  $(this).hide();
-			  $("#boox_ce").show();
+			$("#right_me").click(function() {
+				$(this).hide();
+				$("#boox_ce").show();
 			});
-			$("#boox_ce").click(function(){
-			  $(this).hide();
-			  $("#right_me").show();
+			$("#boox_ce").click(function() {
+				$(this).hide();
+				$("#right_me").show();
 			});
 		</script>
 		<!--侧边栏代码结束-->
-		
+
 		<!--公告代码-->
 		<div id="boox_gg">
 			<div id="cw-gg" class="animated bounceIn">
 				<div id="title_gg">
 					<div class="title_left">
 						<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1354268575,1268995723&fm=26&gp=0.jpg">
-						<p>川</p>
+						<p>Chuang wan</p>
 					</div>
 					<div class="title_right">
 						<img src="https://pic.kuaizhan.com/g3/9b/7c/8103-18cd-4211-97d3-f50c3353a06e95">
 					</div>
 				</div>
 				<div id="txt_center">
-					<p></p>
+					<p>123456</p>
 
 				</div>
 				<div class="txt_right">
-					<p><span class="txt_name"></span></p>
+					<p>来自：<span class="txt_name"></span></p>
 					<!--<img src="https://p4.music.126.net/0lAkLx_MvUR5TDYOsTQTsw==/109951163926228201.jpg">-->
 				</div>
 			</div>
 		</div>
-		<b>欢迎光顾~</b>
-			
+		<script type="text/javascript">
+			if(gg_cwrp=="no"){//热评墙
+				$.get("https://api.oioweb.cn/api/wyypl.php", function(data) {
+					$(".title_left").find("img").attr("src", data.Avatar);
+					$(".title_left p").text(data.UserName);
+					$("#txt_center").find("p").eq(0).text(data.Comment);
+					$(".txt_name").text(niceng+"热评墙");
+				});
+			}else{//自定义公告
+				$(".title_left").find("img").attr("src", img_me);
+				$(".title_left p").text(niceng);
+				$("#txt_center").find("p").eq(0).text(center_text);
+				$(".txt_name").text(niceng+"公告墙");
+			}
+			/*延迟弹出公告框*/
+			setTimeout('test()', 1200);
+
+			function test() {
+				$("#boox_gg").show();
+			}
+		</script>
+		<!--公告代码结束-->
 
 		<!--天气代码-->
 		<div id="tp-weather-widget" style="position:absolute;z-index:99999;"></div>
@@ -299,7 +345,10 @@
 			})
 		</script>
 
-                                <!--音乐播放器-->
+		<!--看板娘-->
+		<img id="kbn" class="animated bounceInRight" src="image/kbn.png">
+
+		<!--音乐播放器-->
 		<div id="QPlayer">
 			<div id="pContent">
 				<div id="player">
@@ -330,22 +379,6 @@
 			<ol id="playlist"></ol>
 		</div>
 		<script>
-			var playlist = [{
-				title: "Love Is Gone",
-				artist: "music",
-				mp3: "http://music.163.com/song/media/outer/url?id=1454137705.mp3",
-				cover: "https://y.gtimg.cn/music/photo_new/T002R300x300M000004Upmxf02GNW9_1.jpg?max_age=2592000",
-			}, {
-				title: "Jocelyn Flores",
-				artist: "music",
-				mp3: "http://music.163.com/song/media/outer/url?id=501133798.mp3",
-				cover: "http://p2.music.126.net/VUwksnGxRVoXKuse_kqOOg==/3286440255426121.jpg?param=300x300",
-			}, {
-				title: "Everybody Dies In Their Nightmares",
-				artist: "music",
-				mp3: "http://music.163.com/song/media/outer/url?id=571339613.mp3",
-				cover: "https://dss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=3202001588,3454933131&fm=74&app=80&f=JPG&size=f121,121?sec=1880279984&t=54ba02057bafbbe69ef108735b8eab24",
-			}, ];
 			var isRotate = true;
 			var autoplay = false;
 		</script>
@@ -360,31 +393,27 @@
 		</script>
 		<!--音乐播放器结束-->
 
-		<!--看板娘-->
-		<img id="kbn" class="animated bounceInRight" src="image/kbn.png">
-
-
-		<!--
+		<!--花瓣飘落-->
 		<div style="height:100%; width:100%;display: none;">七夕情人节花瓣飘落</div>
 		<script src="js/snowfall.jquery.js"></script>
 		<script>
-			$(document).snowfall('clear');
-			$(document).snowfall({
-				image: "https://pic.kuaizhan.com/g3/c3/9b/3f72-60cf-4d91-8500-4f193c67c59205",
-				flakeCount: 10,
-				minSize: 5,
-				maxSize: 22
-			});
-		</script>花瓣飘落-->
-	<script src="js/jquery.marquee.min.js"></script>
-
+		if(huabang=="yes"){
+				$(document).snowfall('clear');
+				$(document).snowfall({
+					image: "https://pic.kuaizhan.com/g3/c3/9b/3f72-60cf-4d91-8500-4f193c67c59205",
+					flakeCount: 10,
+					minSize: 5,
+					maxSize: 22
+				});
+		}
+		</script>
+		<script src="js/jquery.marquee.min.js"></script>
 		<!--花瓣飘落结束-->
 
 		<script type="text/javascript">
 			runtime();
 			function runtime() {
 				// 初始时间，日/月/年 时:分:秒
-				X = new Date("7/16/2020 24:00:00");
 				Y = new Date();
 				T = (Y.getTime() - X.getTime());
 				M = 24 * 60 * 60 * 1000;
@@ -399,6 +428,10 @@
 				span.innerHTML = "本站已运行: " + A + "天" + B + "小时" + C + "分" + D + "秒"
 			}
 			setInterval(runtime, 1000);
+			//滑动触发
+			$(window).on('scroll',function(){
+				
+			})
 		</script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
